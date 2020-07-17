@@ -1,0 +1,260 @@
+html,body{
+    height: 100%;
+}
+.bloco{
+    min-height: 100%;
+    padding-top: 94px;
+}
+
+/*COLORSS*/
+.yellow-logo{
+    background-color: #ffd24c;
+}
+
+/*LOGO*/
+.logo_text{
+    font-size: 0;
+    margin: 0;
+
+}
+
+.logo_img{
+    width: 100px;
+    margin-top: 17px;
+
+}
+
+/*MENU*/
+.navbar{
+    background-color: transparent;
+    transition: background 0.5s linear;
+}
+
+.navbar ul a:hover{
+    background-color: transparent;
+    color: #ffd24c;
+    
+}
+.nav-color{
+    background-color: rgba(0,0,0,0.7);
+    transition: background 0.5s linear;
+}
+/*HOME*/
+
+.home{
+    animation: mudarbg 20s infinite;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*HOME ANIMAÇÃO*/
+@keyframes mudarbg{
+    40% {background-image: url('../img/bg2.jpg');}
+    80% {background-image: url('../img/bg3.jpg');}
+    100%{background-image: url('../img/bg.jpg');}
+}
+
+/*Título e Parágrafo*/
+.titulo{
+    text-transform: uppercase;
+    font-size: 2rem;   
+}
+.titulo::after{
+    content:'';
+    display: block;
+    width: 100px;
+    border-top: 1px solid #ffd24c;
+    margin:15px auto;
+}
+.paragrafo{
+    line-height: 1.8rem;
+}
+.btn:hover, .btn-large:hover {
+    background-color: #333232d8;
+}
+  
+.btn-floating:hover {
+    background-color: #333232d8;
+}
+
+/*SOBRE*/
+.sobre{
+    background-image: url('../img/textura1.png');
+
+}
+
+.sobre p{
+    line-height: 1.8rem;
+    text-align: justify;
+
+}
+
+.sobre .missao-visao-valores{
+    padding: 20px 0;
+    margin-top: 35px;
+
+}
+
+.sobre .missao-visao-valores h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.sobre .missao-visao-valores p{
+    text-align: center;
+}
+
+/*SERVIÇOS*/
+.ramos{
+    background-image: url('../img/textura2.png');
+}
+/*CUSTOM*/
+
+nav .nav-extended .nav-wrapper{
+    min-height: 94px;
+}
+
+.navbar-fixed {
+    position: absolute;
+    height: 94px;
+}
+
+nav, nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons, nav a.button-collapse i {
+  height: 94px;
+  line-height: 94px;
+}
+
+.side-nav{
+    background: url('../img/textura2.png');
+}
+
+.side-nav li>a{
+    color: #ffd24c;
+    font-weight: 100;
+
+}
+
+.tabs{
+    background-color: black;
+}
+.tabs .tab a{
+    color: #fff;
+}
+.tabs .tab a:hover, .tabs .tab a.active{
+    color: #ffd24c;
+}
+.tabs .indicator{
+    background-color: #ffd24c;
+}
+
+.banner h2{
+    font-size: 2.5rem; font-weight: 900; text-transform: uppercase;
+}
+.banner p{
+    font-size: 1.3rem; line-height: 1.9rem;
+}
+/*Atividades-atividades*/
+.atividades{
+    background-image: url(../img/bg-atividades.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;/*ocupa toda a seção fixa*/
+}
+.atividades article p{
+    line-height: 1.8rem;
+}
+/*Contato*/
+.contato{
+    background-image: url('../img/textura1.png');
+}
+.contato h4{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.contato .mapa{
+    min-height: 560px;
+}
+.contato .mapa iframe{
+    width: 100%;
+    min-height: 560px;
+    border: none;
+}
+.contato .informacoes{
+    background-image: url('../img/textura2.png');
+    min-height: 560px;
+    padding: 30px;
+}
+
+.contato .formulario{
+    min-height: 560px;
+    padding: 30px;
+}
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #ffd24c;
+  -webkit-box-shadow: 0 1px 0 0 #ffd24c;
+          box-shadow: 0 1px 0 0 #ffd24c;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #ffd24c;
+}
+/*MEDIA*/
+@media only screen and (max-width: 480px) { 
+.card-image-horizontal{
+    display: none;
+}
+}
+@media only screen and (min-width: 601px) {
+    .banner{
+        padding-top: 4rem;
+    }
+    .banner h2{
+        font-size: 4rem;
+    }
+    .container{
+        width: 85%;
+    }  
+}
+@media only screen and (min-width: 993px) {
+    .banner{
+        padding-top: 5rem;
+    }
+    .banner h2{
+        font-size: 5rem;
+    }
+    .container{
+        width: 90%;
+    }
+}
+ 
+/*Depoimentos*/
+.depoimentos .titulo::after{
+   
+    border-color: black;
+}
+.depoimentos img{
+    width: 100px;
+
+}
+.depoimentos h4{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+/*rodape*/
+.rodape{
+    background-image: url('../img/textura\ 3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+}
+  
+
